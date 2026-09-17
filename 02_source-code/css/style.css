@@ -6,3 +6,9 @@
 
 /* Link Font */
 @import url(/02_source-code/css/bases/font.css);
+
+/* Components */
+@import url(/02_source-code/css/components/global-nav.css);
+
+/* Pages */
+@import url(/02_source-code/css/pages/homepage.css);

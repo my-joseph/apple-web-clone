@@ -4,10 +4,10 @@
     ////////////////////////*/
 
   /* Colors*/
+  --color-dark: hsl(240, 3%, 12%);
   --color-light-500: hsl(240, 2%, 44%);
   --color-light-200: hsl(240, 11%, 96%);
   --color-light: hsl(240, 25%, 98%);
-  --color-dark: hsl(240, 3%, 12%);
   --color-brand-primary: hsl(210, 100%, 40%);
 
   /* Spacing */
@@ -40,11 +40,15 @@
   --font-size-md: 1.5rem; /* subtitle */
   --font-size-lg: 1.75rem; /* title */
 
-  --font-weight-th: 200;
-  --font-weight-rg: 400;
-  --font-weight-bd: 700;
-  --font-weight-xbd: 800;
-  --font-weight-hy: 900;
+  --font-weight-ultralight: 100;
+  --font-weight-light: 200;
+  --font-weight-thin: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+  --font-weight-heavy: 900;
 
   /* //////////////////////
             Tokens
@@ -60,7 +64,6 @@
 
   /* Text */
   --text-primary: var(--color-dark);
-  --text-secondary: var(--color-dark);
 
   /* //////////////////////
               UI

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font-family-primary);
 }
 
 input,
@@ -12,5 +13,5 @@ select {
 
 body {
   background-color: var(--bg-primary);
-  font-family: var(--font-family-primary);
+  font-size: var(--font-size-rg);
 }

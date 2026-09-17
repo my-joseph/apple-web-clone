@@ -1,0 +1,20 @@
+.ribbon {
+  width: 100%;
+
+  font-size: var(--font-size-sm);
+
+  background-color: var(--bg-secondary);
+}
+
+.ribbon__content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: var(--spacing-rg);
+}
+
+.ribbon__text {
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+}
