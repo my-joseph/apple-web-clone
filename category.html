@@ -252,9 +252,13 @@
             <h2 class="cardsshelf__header">
               All models. <span class="text--muted">Take your pick</span>
             </h2>
-            <div class="cardsshelf__scroller swiper">
-              <ul class="cardsshelf__scroller-list swiper-wrapper">
-                <li class="cardsshelf__scroller-item swiper-slide">
+            <div class="scroller cardsshelf__scroller swiper">
+              <ul
+                class="scroller-list cardsshelf__scroller-list swiper-wrapper"
+              >
+                <li
+                  class="scroller-item cardsshelf__scroller-item swiper-slide"
+                >
                   <article class="product-card">
                     <div class="product-card__header">
                       <h3 class="product-card__title">MacBook Pro</h3>
@@ -284,12 +288,12 @@
                 </li>
               </ul>
               <button
-                class="category-scroller__btn category-scroller__btn--next"
+                class="scroller__btn scroller__btn--next cardsshelf-scroller__btn--next"
               >
                 <i data-lucide="chevron-right" class="scroller-btn__icon"></i>
               </button>
               <button
-                class="category-scroller__btn category-scroller__btn--prev"
+                class="scroller__btn scroller__btn--prev cardsshelf-scroller__btn--prev"
               >
                 <i data-lucide="chevron-left" class="scroller-btn__icon"></i>
               </button>
@@ -298,6 +302,6 @@
         </div>
       </main>
     </div>
-    <script type="module" src="/src/category.js"></script>
+    <script type="module" src="/src/categoryApp.js"></script>
   </body>
 </html>
