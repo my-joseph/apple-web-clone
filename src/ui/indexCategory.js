@@ -12,15 +12,23 @@ export function renderCategoryCard(categories) {
 
   // Create Swiper //
   const swiperContainer = document.createElement("div");
-  swiperContainer.classList.add("category-srcoller", "swiper");
+  swiperContainer.classList.add("srcoller", "category-srcoller", "swiper");
 
   const swiperList = document.createElement("ul");
-  swiperList.classList.add("category-scroller__list", "swiper-wrapper");
+  swiperList.classList.add(
+    "scroller__list",
+    "category-scroller__list",
+    "swiper-wrapper",
+  );
 
   // Create each Swiper items //
   categories.forEach((category) => {
     const swiperItem = document.createElement("li");
-    swiperItem.classList.add("category-scroller__item", "swiper-slide");
+    swiperItem.classList.add(
+      "srcoller__item",
+      "category-scroller__item",
+      "swiper-slide",
+    );
 
     // Create Category Card //
     const categoryCard = document.createElement("a");
@@ -49,7 +57,8 @@ export function renderCategoryCard(categories) {
   // Create prev & next button //
   const prevBtn = document.createElement("button");
   prevBtn.classList.add(
-    "category-scroller__btn",
+    "scroller__btn",
+    "scroller__btn--prev",
     "category-scroller__btn--prev",
   );
 
@@ -58,7 +67,8 @@ export function renderCategoryCard(categories) {
 
   const nextBtn = document.createElement("button");
   nextBtn.classList.add(
-    "category-scroller__btn",
+    "scroller__btn",
+    "scroller__btn--next",
     "category-scroller__btn--next",
   );
 
