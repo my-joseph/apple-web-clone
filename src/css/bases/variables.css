@@ -72,6 +72,7 @@
 
   /* Text */
   --text-primary: var(--color-dark);
+  --text-muted: var(--color-light-500);
 
   /* //////////////////////
               UI

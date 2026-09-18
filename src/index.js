@@ -1,6 +1,6 @@
 import { createSwiper } from "./utils/swiper.js";
 import { createIcons, icons } from "lucide";
-import { renderCategoryCard } from "./ui/category.js";
+import { renderCategoryCard } from "./ui/indexCategory.js";
 import { getCategory } from "./data/category.js";
 
 const categories = getCategory();

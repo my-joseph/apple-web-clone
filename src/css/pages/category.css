@@ -126,3 +126,30 @@
 .navbar__link {
   white-space: nowrap;
 }
+
+.cardsshelf {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  padding-top: var(--spacing-3xl);
+}
+
+.cardsshelf__header {
+  padding-inline: var(--spacing-7xl);
+}
+
+.cardsshelf__header {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--font-letter-space-snug);
+}
+
+.cardsshelf__header .text--muted {
+  color: var(--text-muted);
+}
+
+.product-card {
+  background-color: var(--bg-secondary);
+}

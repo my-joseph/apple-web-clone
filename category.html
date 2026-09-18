@@ -202,7 +202,7 @@
           <div class="navbar swiper">
             <ul class="navbar__content-list swiper-wrapper">
               <li class="navbar__content-item swiper-slide">
-                <a href="" class="navbar__link-wrapper">
+                <a href="#shelf1" class="navbar__link-wrapper">
                   <span class="navbar__link">All Models</span>
                 </a>
               </li>
@@ -248,13 +248,51 @@
               </li>
             </ul>
           </div>
-
-          <div class="cardsshelf">
-            <h2 class="cardsshelf__header"></h2>
-            <div class="cardsshelf__scroller">
-              <ul class="cardsshelf__scroller-list">
-                <li class="cardsshelf__scroller-item"></li>
+          <div class="cardsshelf" id="shelf1">
+            <h2 class="cardsshelf__header">
+              All models. <span class="text--muted">Take your pick</span>
+            </h2>
+            <div class="cardsshelf__scroller swiper">
+              <ul class="cardsshelf__scroller-list swiper-wrapper">
+                <li class="cardsshelf__scroller-item swiper-slide">
+                  <article class="product-card">
+                    <div class="product-card__header">
+                      <h3 class="product-card__title">MacBook Pro</h3>
+                    </div>
+                    <div class="product-card__content">
+                      <div class="produt-card__img-wrapper">
+                        <img src="" alt="" />
+                      </div>
+                      <div class="product-card__swatches">
+                        <ul class="swatches__list">
+                          <li class="swatches__item">
+                            <div class="swatches__img-wrapper">
+                              <img src="" alt="" class="swatches__img" />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="produc-card__info">
+                        <span class="product-card__description">
+                          Buy from $699or $58.25/mo. per month for 12 mo. months
+                          Footnote
+                        </span>
+                        <a href="" class="btn btn--primary">Buy</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
               </ul>
+              <button
+                class="category-scroller__btn category-scroller__btn--next"
+              >
+                <i data-lucide="chevron-right" class="scroller-btn__icon"></i>
+              </button>
+              <button
+                class="category-scroller__btn category-scroller__btn--prev"
+              >
+                <i data-lucide="chevron-left" class="scroller-btn__icon"></i>
+              </button>
             </div>
           </div>
         </div>
