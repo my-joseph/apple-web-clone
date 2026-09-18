@@ -23,6 +23,7 @@
   --spacing-4xl: 4rem; /* 64px */
   --spacing-5xl: 6rem; /* 80px */
   --spacing-6xl: 7rem; /* 96px */
+  --spacing-7xl: 8rem; /* 128px */
 
   /* Border radius */
   --border-radius-round: 99px;
@@ -39,16 +40,20 @@
   --font-size-rg: 1.063rem; /* body */
   --font-size-md: 1.5rem; /* subtitle */
   --font-size-lg: 1.75rem; /* title */
+  --font-size-extra: 5rem; /* display */
 
-  --font-weight-ultralight: 100;
-  --font-weight-light: 200;
-  --font-weight-thin: 300;
+  --font-weight-thin: 100;
+  --font-weight-ultralight: 200;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-black: 800;
   --font-weight-heavy: 900;
+
+  --font-letter-space-tight: -0.05em;
+  --font-letter-space-snug: -0.025em;
 
   /* //////////////////////
             Tokens
@@ -61,6 +66,7 @@
   /* Action */
   --act-primary-bg: var(--color-brand-primary);
   --act-primary-text: var(--color-light);
+  --act-brand-text: var(--color-brand-primary);
 
   /* Text */
   --text-primary: var(--color-dark);

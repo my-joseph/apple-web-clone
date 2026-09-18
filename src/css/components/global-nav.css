@@ -1,7 +1,15 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
 .global-nav {
   height: var(--nav-height);
   max-width: 1024px;
   width: 100%;
+  height: auto;
   margin-inline: auto;
 }
 
@@ -16,5 +24,18 @@
 }
 
 .global-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
+}
+
+.global-nav__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
 }
