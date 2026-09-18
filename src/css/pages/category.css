@@ -87,3 +87,42 @@
   height: 100%;
   width: 100%;
 }
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar__content-item.swiper-slide {
+  width: auto !important;
+}
+
+.navbar__link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+
+  padding: var(--spacing-xs);
+
+  font-size: var(--font-size-rg);
+  font-weight: var(--font-weight-regular);
+  color: var(--act-secondary-text);
+
+  text-decoration: none;
+}
+
+.navbar__link-wrapper:hover {
+  color: var(--act-secondary-text--hover);
+}
+
+.navbar__link {
+  white-space: nowrap;
+}

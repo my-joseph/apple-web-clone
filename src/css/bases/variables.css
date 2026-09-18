@@ -66,6 +66,8 @@
   /* Action */
   --act-primary-bg: var(--color-brand-primary);
   --act-primary-text: var(--color-light);
+  --act-secondary-text: var(--color-dark);
+  --act-secondary-text--hover: var(--color-light-500);
   --act-brand-text: var(--color-brand-primary);
 
   /* Text */
