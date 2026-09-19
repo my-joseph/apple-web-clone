@@ -1,5 +1,6 @@
 import { createSwiper } from "./utils/swiper.js";
 import { createIcons, icons } from "lucide";
+import { getProducts } from "./data/products.js";
 const createNavbarSwiper = () => {
   createSwiper(".navbar", {
     slidesPerView: "auto",
