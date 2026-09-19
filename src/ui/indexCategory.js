@@ -1,9 +1,6 @@
 import { createIconNode } from "../utils/icon";
 
-export function renderCategoryCard(categories) {
-  const store = document.querySelector(".store");
-  const storeHeader = document.querySelector(".store__header");
-
+export function createCategoryScroller(categories) {
   // Remove Old existing html //
   const oldSwiperContainer = document.querySelector(".category-srcoller");
   if (oldSwiperContainer) {
@@ -79,7 +76,7 @@ export function renderCategoryCard(categories) {
   prevBtn.append(prevIcon);
   nextBtn.append(nextIcon);
   swiperContainer.append(swiperList, prevBtn, nextBtn);
-  store.append(swiperContainer);
+  return swiperContainer;
 }
 
 // <div class="category-srcoller swiper">

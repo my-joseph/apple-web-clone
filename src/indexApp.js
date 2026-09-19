@@ -1,6 +1,6 @@
 import { createSwiper } from "./utils/swiper.js";
 import { createIcons, icons } from "lucide";
-import { renderCategoryCard } from "./ui/indexCategory.js";
+import { createCategoryScroller } from "./ui/indexCategory.js";
 import { getCategory } from "./data/category.js";
 
 const categories = getCategory();
@@ -20,7 +20,12 @@ const createCategorySwiper = () => {
 };
 
 const handleDOMLoaded = () => {
-  renderCategoryCard(categories);
+  const store = document.querySelector(".store");
+
+  // Append Category Scroller //
+  const categoryScroller = createCategoryScroller(categories);
+  store.append(categoryScroller);
+
   createIcons({ icons });
   createCategorySwiper();
 };
