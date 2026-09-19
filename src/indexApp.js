@@ -2,6 +2,7 @@ import { createSwiper } from "./utils/swiper.js";
 import { createIcons, icons } from "lucide";
 import { createCategoryScroller } from "./ui/indexCategory.js";
 import { getCategory } from "./data/category.js";
+import { Mousewheel } from "swiper/modules";
 
 const categories = getCategory();
 
@@ -16,6 +17,10 @@ const createCategorySwiper = () => {
     slidesOffsetBefore: 128,
     slidesOffsetAfter: 128,
     grabCursor: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    freeMode: true,
   });
 };
 

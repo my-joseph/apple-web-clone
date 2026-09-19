@@ -2,6 +2,8 @@ export function getProducts() {
   return [
     {
       id: 1,
+      shelfId: 1,
+      categoryId: 1,
       name: "MacBook Neo",
       image: "/public/images/products/macbook-neo/main.webp",
       swatch: [
@@ -11,9 +13,12 @@ export function getProducts() {
         "/public/images/products/macbook-neo/sw004.png",
       ],
       info: "Buy from $699or $58.25/mo. per month for 12 mo.",
+      badge: "",
     },
     {
       id: 2,
+      shelfId: 1,
+      categoryId: 1,
       name: "MacBook Air",
       image: "/public/images/products/macbook-air/main.webp",
       swatch: [
@@ -23,9 +28,12 @@ export function getProducts() {
         "/public/images/products/macbook-air/sw004.png",
       ],
       info: "Buy from $1299or $108.25/mo. per month for 12 mo. months Footnote Lease from $24.99/mo. for 36 mo. with Apple Upgrade Footnote",
+      badge: "",
     },
     {
       id: 3,
+      shelfId: 1,
+      categoryId: 1,
       name: "MacBook Pro",
       image: "/public/images/products/macbook-pro/main.webp",
       swatch: [
@@ -33,9 +41,12 @@ export function getProducts() {
         "/public/images/products/macbook-pro/sw002.png",
       ],
       info: "Buy from $1999or $166.58/mo. per month for 12 mo. months Footnote Lease from $38.99/mo. for 36 mo. with Apple Upgrade Footnote",
+      badge: "",
     },
     {
       id: 4,
+      shelfId: 1,
+      categoryId: 1,
       name: "iMac",
       image: "/public/images/products/imac/main.webp",
       swatch: [
@@ -48,34 +59,57 @@ export function getProducts() {
         "/public/images/products/imac/sw007.png",
       ],
       info: "Buy from $1499 or $124.91/mo.  per monthfor 12 mo.months Footnote Lease from $28.99/mo.per month for 36 mo.months with Apple Upgrade",
+      badge: "",
     },
     {
       id: 5,
+      shelfId: 1,
+      categoryId: 1,
       name: "Mac mini",
       image: "/public/images/products/mac-mini/main.webp",
       swatch: [],
       info: "Buy from $1499 or $124.91/mo.  per monthfor 12 mo.months Footnote Lease from $28.99/mo.per month for 36 mo.months with Apple Upgrade",
+      badge: "NEW",
     },
     {
       id: 6,
+      shelfId: 1,
+      categoryId: 1,
       name: "Mac Studio",
       image: "/public/images/products/mac-studio/main.webp",
       swatch: [],
       info: "Buy from $2499or $208.25/mo. per month for 12 mo. months Footnote ±Lease from $48.99/mo. for 36 mo. with Apple Upgrade Footnote",
+      badge: "NEW",
     },
     {
       id: 7,
+      shelfId: 1,
+      categoryId: 1,
       name: "Studio Display",
       image: "/public/images/products/studio-display/main.webp",
       swatch: [],
       info: "Buy from $1599 or $133.25/mo. per month for 12 mo.",
+      badge: "",
     },
     {
       id: 8,
+      shelfId: 1,
+      categoryId: 1,
       name: "Studio Display XDR",
       image: "/public/images/products/studio-display-xdr/main.webp",
       swatch: [],
       info: "From $3299 or $274.91/mo. per month  for 12 mo.",
+      badge: "",
+    },
+    {
+      id: 8,
+      shelfId: 2,
+      categoryId: 1,
+      name: "Studio Display XDR",
+      image: "/public/images/products/studio-display-xdr/main.webp",
+      swatch: [],
+      info: "From $3299 or $274.91/mo. per month  for 12 mo.",
+      badge: "",
     },
   ];
 }

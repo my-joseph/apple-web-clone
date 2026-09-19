@@ -1,6 +1,17 @@
 import { createSwiper } from "./utils/swiper.js";
 import { createIcons, icons } from "lucide";
 import { getProducts } from "./data/products.js";
+import {
+  getCardsShelfData,
+  groupedProductsByCardsShelf,
+  getCardsShelf,
+} from "./data/cardsshelf.js";
+
+import { createCardsShelf } from "./ui/cardsShelf.js";
+
+const products = getProducts();
+const cardsShelfData = getCardsShelfData();
+
 const createNavbarSwiper = () => {
   createSwiper(".navbar", {
     slidesPerView: "auto",
@@ -15,24 +26,32 @@ const createCardsShelfSwiper = () => {
       nextEl: ".cardsshelf-scroller__btn--next",
       prevEl: ".cardsshelf-scroller__btn--prev",
     },
-    slidesPerView: 3,
+    slidesPerView: "auto",
     slidesOffsetBefore: 128,
     slidesOffsetAfter: 128,
-    grabCursor: true,
+    spaceBetween: 20,
+    allowSlideNext: true,
+    allowSlidePrev: true,
+
+    mousewheel: {
+      forceToAxis: true, // บังคับให้การปัด Trackpad แนวนอนทำงานเฉพาะแถบสไลด์
+    },
+    grabCursor: true, // เปลี่ยน Cursor เป็นรูปมือจับให้ลากเมาส์ได้ด้วย
+
+    // 💡 Option เสริม (ถ้าอยากได้ฟีลไหลตามแรงเหวี่ยงแบบ Apple Store)
+    freeMode: true,
   });
 };
-createIcons({ icons });
-createNavbarSwiper();
-createCardsShelfSwiper();
 
-const swiperItem = document.querySelector(".cardsshelf__scroller-item");
+const handleDOMLoaded = () => {
+  const shelf1 = getCardsShelf(cardsShelfData[0], products);
+  const shelf1Node = createCardsShelf(shelf1);
+  const oldShelf = document.querySelector(".cardsshelf");
+  oldShelf.replaceWith(shelf1Node);
 
-swiperItem.addEventListener("mouseenter", (e) => {
-  const btn = document.querySelector(".product-card__cta-secondary");
-  btn.classList.add("product-card__cta-secondary--hover");
-});
+  createIcons({ icons });
+  createNavbarSwiper();
+  createCardsShelfSwiper();
+};
 
-swiperItem.addEventListener("mouseleave", (e) => {
-  const btn = document.querySelector(".product-card__cta-secondary");
-  btn.classList.remove("product-card__cta-secondary--hover");
-});
+document.addEventListener("DOMContentLoaded", handleDOMLoaded);
