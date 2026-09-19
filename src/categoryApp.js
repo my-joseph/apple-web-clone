@@ -9,7 +9,7 @@ const createNavbarSwiper = () => {
   });
 };
 const createCardsShelfSwiper = () => {
-  createSwiper(".cardsshelf-scroller__btn--next", {
+  createSwiper(".cardsshelf__scroller", {
     navigation: {
       nextEl: ".cardsshelf-scroller__btn--next",
       prevEl: ".cardsshelf-scroller__btn--prev",
@@ -23,3 +23,15 @@ const createCardsShelfSwiper = () => {
 createIcons({ icons });
 createNavbarSwiper();
 createCardsShelfSwiper();
+
+const swiperItem = document.querySelector(".cardsshelf__scroller-item");
+
+swiperItem.addEventListener("mouseenter", (e) => {
+  const btn = document.querySelector(".product-card__cta-secondary");
+  btn.classList.add("product-card__cta-secondary--hover");
+});
+
+swiperItem.addEventListener("mouseleave", (e) => {
+  const btn = document.querySelector(".product-card__cta-secondary");
+  btn.classList.remove("product-card__cta-secondary--hover");
+});
